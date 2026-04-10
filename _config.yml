@@ -1,0 +1,220 @@
+title: "ML Metrics — The Definitive Reference"
+description: "The definitive reference guide for selecting and using evaluation metrics in machine learning — with a focus on tensor-level debugging."
+baseurl: "/metrics"
+url: "https://karam-nus.github.io"
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+include:
+  - README.md
+
+navigation:
+  - title: "Home"
+    url: "/"
+
+  - title: "— Tensor Comparison —"
+    url: "/docs/metrics/tensor-comparison/cosine_similarity"
+    section: true
+  - title: "Cosine Similarity"
+    url: "/docs/metrics/tensor-comparison/cosine_similarity"
+  - title: "RMSE"
+    url: "/docs/metrics/tensor-comparison/rmse"
+  - title: "RRMSE"
+    url: "/docs/metrics/tensor-comparison/rrmse"
+  - title: "MAE"
+    url: "/docs/metrics/tensor-comparison/mae"
+  - title: "torch.allclose / isclose"
+    url: "/docs/metrics/tensor-comparison/allclose"
+  - title: "SNR"
+    url: "/docs/metrics/tensor-comparison/snr"
+  - title: "SQNR"
+    url: "/docs/metrics/tensor-comparison/sqnr"
+  - title: "KL Divergence"
+    url: "/docs/metrics/tensor-comparison/kl_divergence"
+  - title: "L1 / L2 Norm Difference"
+    url: "/docs/metrics/tensor-comparison/norm_difference"
+  - title: "Max Absolute Error"
+    url: "/docs/metrics/tensor-comparison/max_absolute_error"
+  - title: "Pearson / Spearman"
+    url: "/docs/metrics/tensor-comparison/correlation"
+
+  - title: "— Regression —"
+    url: "/docs/metrics/regression/mse"
+    section: true
+  - title: "MSE"
+    url: "/docs/metrics/regression/mse"
+  - title: "RMSE"
+    url: "/docs/metrics/regression/rmse"
+  - title: "MAE"
+    url: "/docs/metrics/regression/mae"
+  - title: "MAPE"
+    url: "/docs/metrics/regression/mape"
+  - title: "R²"
+    url: "/docs/metrics/regression/r_squared"
+  - title: "Huber Loss"
+    url: "/docs/metrics/regression/huber_loss"
+  - title: "SMAPE"
+    url: "/docs/metrics/regression/smape"
+
+  - title: "— Classification —"
+    url: "/docs/metrics/classification/accuracy"
+    section: true
+  - title: "Accuracy"
+    url: "/docs/metrics/classification/accuracy"
+  - title: "Precision"
+    url: "/docs/metrics/classification/precision"
+  - title: "Recall"
+    url: "/docs/metrics/classification/recall"
+  - title: "F1 Score"
+    url: "/docs/metrics/classification/f1_score"
+  - title: "ROC-AUC"
+    url: "/docs/metrics/classification/roc_auc"
+  - title: "PR-AUC"
+    url: "/docs/metrics/classification/pr_auc"
+  - title: "MCC"
+    url: "/docs/metrics/classification/mcc"
+  - title: "Cohen's Kappa"
+    url: "/docs/metrics/classification/cohens_kappa"
+  - title: "Specificity"
+    url: "/docs/metrics/classification/specificity"
+  - title: "Top-K Accuracy"
+    url: "/docs/metrics/classification/top_k_accuracy"
+
+  - title: "— Object Detection —"
+    url: "/docs/metrics/object-detection/map"
+    section: true
+  - title: "mAP"
+    url: "/docs/metrics/object-detection/map"
+  - title: "IoU"
+    url: "/docs/metrics/object-detection/iou"
+  - title: "GIoU"
+    url: "/docs/metrics/object-detection/giou"
+  - title: "DIoU"
+    url: "/docs/metrics/object-detection/diou"
+  - title: "CIoU"
+    url: "/docs/metrics/object-detection/ciou"
+  - title: "Average Recall"
+    url: "/docs/metrics/object-detection/average_recall"
+
+  - title: "— Segmentation —"
+    url: "/docs/metrics/segmentation/dice"
+    section: true
+  - title: "Dice Coefficient"
+    url: "/docs/metrics/segmentation/dice"
+  - title: "IoU (Jaccard)"
+    url: "/docs/metrics/segmentation/iou"
+  - title: "Pixel Accuracy"
+    url: "/docs/metrics/segmentation/pixel_accuracy"
+  - title: "Boundary F1"
+    url: "/docs/metrics/segmentation/boundary_f1"
+
+  - title: "— Generative —"
+    url: "/docs/metrics/generative/fid"
+    section: true
+  - title: "FID"
+    url: "/docs/metrics/generative/fid"
+  - title: "Inception Score"
+    url: "/docs/metrics/generative/inception_score"
+  - title: "LPIPS"
+    url: "/docs/metrics/generative/lpips"
+  - title: "SSIM"
+    url: "/docs/metrics/generative/ssim"
+  - title: "PSNR"
+    url: "/docs/metrics/generative/psnr"
+  - title: "BLEU"
+    url: "/docs/metrics/generative/bleu"
+  - title: "ROUGE"
+    url: "/docs/metrics/generative/rouge"
+  - title: "METEOR"
+    url: "/docs/metrics/generative/meteor"
+  - title: "CIDEr"
+    url: "/docs/metrics/generative/cider"
+  - title: "BERTScore"
+    url: "/docs/metrics/generative/bertscore"
+
+  - title: "— Ranking & Retrieval —"
+    url: "/docs/metrics/ranking/ndcg"
+    section: true
+  - title: "NDCG"
+    url: "/docs/metrics/ranking/ndcg"
+  - title: "MRR"
+    url: "/docs/metrics/ranking/mrr"
+  - title: "Precision@K"
+    url: "/docs/metrics/ranking/precision_at_k"
+  - title: "Recall@K"
+    url: "/docs/metrics/ranking/recall_at_k"
+  - title: "MAP@K"
+    url: "/docs/metrics/ranking/map_at_k"
+
+  - title: "— Calibration —"
+    url: "/docs/metrics/calibration/ece"
+    section: true
+  - title: "ECE"
+    url: "/docs/metrics/calibration/ece"
+  - title: "MCE"
+    url: "/docs/metrics/calibration/mce"
+  - title: "Reliability Diagrams"
+    url: "/docs/metrics/calibration/reliability_diagrams"
+  - title: "Brier Score"
+    url: "/docs/metrics/calibration/brier_score"
+  - title: "NLL"
+    url: "/docs/metrics/calibration/nll"
+
+  - title: "— Comparisons —"
+    url: "/docs/comparisons/tensor_comparison_table"
+    section: true
+  - title: "Tensor Comparison"
+    url: "/docs/comparisons/tensor_comparison_table"
+  - title: "Regression"
+    url: "/docs/comparisons/regression_table"
+  - title: "Classification"
+    url: "/docs/comparisons/classification_table"
+  - title: "Object Detection"
+    url: "/docs/comparisons/object_detection_table"
+  - title: "Segmentation"
+    url: "/docs/comparisons/segmentation_table"
+  - title: "Generative"
+    url: "/docs/comparisons/generative_table"
+  - title: "Ranking & Retrieval"
+    url: "/docs/comparisons/ranking_table"
+  - title: "Calibration"
+    url: "/docs/comparisons/calibration_table"
+
+  - title: "— Playbooks —"
+    url: "/docs/playbooks/quantization_debugging"
+    section: true
+  - title: "Quantization Debugging"
+    url: "/docs/playbooks/quantization_debugging"
+  - title: "Numerical Precision"
+    url: "/docs/playbooks/numerical_precision"
+
+  - title: "— Reference —"
+    url: "/docs/glossary"
+    section: true
+  - title: "Glossary"
+    url: "/docs/glossary"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
