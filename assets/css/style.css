@@ -1,3 +1,4 @@
+/* ============================================================
    Dark Theme — ML Metrics Guide (Green Accent)
    ============================================================ */
 
@@ -1190,7 +1191,7 @@ body {
 
 /* Dimension-specific colors */
 .tensor-shape .ts-dim.batch   { background: rgba(34, 197, 94, 0.12); color: var(--green); border: 1px solid rgba(34, 197, 94, 0.25); }
-.tensor-shape .ts-dim.seq     { background: var(--accent-subtle); color: var(--accent); border: 1px solid rgba(59, 130, 246, 0.25); }
+.tensor-shape .ts-dim.seq     { background: var(--accent-subtle); color: var(--accent); border: 1px solid rgba(34, 197, 94, 0.25); }
 .tensor-shape .ts-dim.feature { background: rgba(168, 85, 247, 0.12); color: var(--purple); border: 1px solid rgba(168, 85, 247, 0.25); }
 .tensor-shape .ts-dim.heads   { background: rgba(249, 115, 22, 0.12); color: var(--orange); border: 1px solid rgba(249, 115, 22, 0.25); }
 .tensor-shape .ts-dim.vocab   { background: rgba(236, 72, 153, 0.12); color: var(--pink); border: 1px solid rgba(236, 72, 153, 0.25); }
